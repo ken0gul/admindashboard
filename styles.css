@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+* {
+     margin: 0;
+    
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+header {
+    background-color: #fff;
+    border: 1px solid;
+    grid-column: 2 / -1;
+    grid-row: 1 / span 1;
+}
+
+aside {
+    background-color: #06b6d4;
+    color: #fff;
+    font-weight: bold;
+
+    grid-column: 1  / 2;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    
+
+}
+
+aside  {
+    justify-items: center;
+    padding: 20px 0;
+}
+
+
+
+aside ul li a {
+    color: inherit;
+    text-decoration: none;
+
+    font-size: 22px;
+    
+}
+
+aside ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Dashboard logo */
+.dashboard-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    font-size: 26px;
+}
+
+
+/* Nav */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 0;
+    
+}
+
+.flex-extend {
+    margin-bottom: 40px;
+}
+
+
+/* Main */
+main {
+
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+/* Article */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    justify-items: space-between;
+    align-content: center;
+    gap: 30px;
+}
+
+.article {
+    border: 1px solid;
+    font-size: 20px;
+}
+
+main {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+}
+
+/* Side Bar */
+.side-bar {
+    grid-column: 2 / 3;
+
+
+    border: 1px solid;
+}
