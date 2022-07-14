@@ -208,7 +208,7 @@ main h1 {
 
 .articles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     justify-content: center;
     justify-items: space-between;
     align-content: center;
@@ -224,14 +224,14 @@ main h1 {
     border-left: 10px solid #f59e0b;
     border-radius: 11px;
     display: grid;
-    gap: 40px;
+    gap: 60px;
 }
 
 .icons {
     justify-self: end;
 }
 main {
-    grid-column: 2 / -1;
+    grid-column: 2 / 3;
     /* grid-row: 2 / -1; */
     align-items: start;
 }
@@ -257,7 +257,7 @@ main {
 }
 
 .announcements div {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     border-bottom: 1px solid grey;
 
