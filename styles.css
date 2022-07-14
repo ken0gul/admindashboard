@@ -36,6 +36,8 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    flex: 1 1 200px;
 }
 
 .search-wrapper {
@@ -44,11 +46,11 @@ header {
     align-items: center;
 }
 .search-bar input[type="search"] {
-    width: 50%;
     border-radius: 9px;
     font-size: 22px;
     padding: 3px 8px;
-    flex: 1 0;
+
+    width: 50%;
 
     background-color: rgb(221, 214, 214);
     outline: none;
@@ -60,6 +62,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+
 }
 
 .account-info span {
@@ -239,7 +242,7 @@ main {
 
     display: grid;
     grid-template-columns: 1fr;    
-    gap: 30px;
+    gap: 23px;
 }
 
 .announcements {
@@ -249,7 +252,7 @@ main {
     gap: 35px;
 
     background-color: white;
-    padding: 12px 54px;
+    padding: 22px 54px;
     border-radius: 11px;
 }
 
