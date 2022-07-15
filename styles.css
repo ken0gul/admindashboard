@@ -24,9 +24,8 @@ header {
     grid-column: 2 / -1;
     padding: 26px;
 
-    row-gap: 20px;
-   
-    
+    display: grid;
+    gap: 20px;    
 
 }
 
@@ -94,6 +93,13 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+
+.welcome-wrapper svg {
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    border-radius: 50%;
 }
 .welcome-message {
     display: flex;
